@@ -2,20 +2,27 @@ package definitionRectangle;
 
 public class Rectangle {
 	//propriétés
+	private int id;
 	private double longueur;
 	private double largeur;
+	public static int count;
 	
 	//constructeur
 	public Rectangle(){
+		id = ++count;
 		longueur = 00.00;
 		largeur = 00.00;		
 	}
 	public Rectangle(double longueur, double largeur){
+		this.id = ++count;
 		this.longueur =longueur;
 		this.largeur = largeur;
 	}
 	
 	//assecceur et mutateur
+	public int getId(){
+		return id;
+	}
 	public double getLongeur(){
 		return longueur;
 	}
@@ -27,6 +34,10 @@ public class Rectangle {
 	}
 	public void setLargeur(double largeur){
 		this.largeur= largeur;
+	}
+	
+	public void setId(){
+		this.id = ++count;
 	}
 	
 	//methodes
