@@ -30,5 +30,26 @@ public class Rectangle {
 	}
 	
 	//methodes
+	public double perimetre(double perimetre){
+		perimetre = (this.getLongeur()+this.getLargeur())*2;
+		return perimetre;			
+	}
+	public double aire(double aire){
+		aire = this.getLongeur()*this.getLargeur();
+		return aire;
+	}
+	public boolean isCarre(){
+		boolean carre;
+		if(this.getLongeur() == this.getLargeur()){
+			carre = true;
+		}else{
+			carre = false;
+		}
+		return carre;
+	}
+	
+	//public String toString(){
+		
+	//}
 	
 }
