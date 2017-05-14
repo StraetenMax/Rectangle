@@ -49,18 +49,18 @@ public class Rectangle {
 		double air = this.getLongeur()*this.getLargeur();
 		return air;
 	}
-	public boolean isCarre(){
-		boolean carre;
+	public String isCarre(){
+		String carre;
 		if(this.getLongeur() == this.getLargeur()){
-			carre = true;
+			carre = "c'est un carré";
 		}else{
-			carre = false;
+			carre = "ce n'est pas un carré";
 		}
 		return carre;
 	}
 	
 	public String toString(){
-       return "- Longueur : "+this.getLongeur()+" Largeur : "+this.getLargeur()+" Périmètre : "+this.perimetre()+" Aire : "+this.aire()+" c'est un carré "+this.isCarre();
+       return "-"+this.getId()+" Longueur : "+this.getLongeur()+" Largeur : "+this.getLargeur()+" Périmètre : "+this.perimetre()+" Aire : "+this.aire()+" et "+this.isCarre();
 	}
 	
 }
