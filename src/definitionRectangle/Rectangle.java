@@ -10,9 +10,9 @@ public class Rectangle {
 		longueur = 00.00;
 		largeur = 00.00;		
 	}
-	public Rectangle(double longueur, double lageur){
+	public Rectangle(double longueur, double largeur){
 		this.longueur =longueur;
-		this.largeur =largeur;
+		this.largeur = largeur;
 	}
 	
 	//assecceur et mutateur
