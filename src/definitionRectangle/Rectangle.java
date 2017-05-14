@@ -30,13 +30,13 @@ public class Rectangle {
 	}
 	
 	//methodes
-	public double perimetre(double perimetre){
-		perimetre = (this.getLongeur()+this.getLargeur())*2;
-		return perimetre;			
+	public double perimetre(){
+		double perim = (this.getLongeur()+this.getLargeur())*2;
+		return perim;			
 	}
-	public double aire(double aire){
-		aire = this.getLongeur()*this.getLargeur();
-		return aire;
+	public double aire(){
+		double air = this.getLongeur()*this.getLargeur();
+		return air;
 	}
 	public boolean isCarre(){
 		boolean carre;
@@ -48,8 +48,8 @@ public class Rectangle {
 		return carre;
 	}
 	
-	//public String toString(){
-		
-	//}
+	public String toString(){
+       return "- Longueur : "+this.getLongeur()+" Largeur : "+this.getLargeur()+" Périmètre : "+this.perimetre()+" Aire : "+this.aire()+" c'est un carré "+this.isCarre();
+	}
 	
 }
